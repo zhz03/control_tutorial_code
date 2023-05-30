@@ -45,7 +45,7 @@ conda create -n control python=3.7
 pip install -r requirements.txt 
 ```
 
-### 5. Understand PID tunning
+### 5.2 Understand PID tunning
 
 For different models, PID controller needs to be fine-tune accordingly. 
 
@@ -67,7 +67,30 @@ class Robot(object):
     def __init__(self, length=20):
 ```
 
+## 5.3 For code detail usage
 
+Please check the following [README]()
+
+## 6 MCP control
+
+The MPC controller minimize this cost function defined as:
+$$
+J = x^TQx + u^TRu
+$$
+subject to:
+
+- Linearized Inverted Pendulum model
+- Initial state
+
+For more detailed code implementation, please check this [README](https://github.com/zhz03/control_tutorial_code/blob/main/control_code/MPC_scripts/README.md)
+
+Here is the results:
+
+![](./control_code/MPC_scripts/figs/path2.png)
+
+![](./control_code/MPC_scripts/figs/results1.png)
+
+![](./control_code/MPC_scripts/figs/results2.png)
 
 ## Reference
 

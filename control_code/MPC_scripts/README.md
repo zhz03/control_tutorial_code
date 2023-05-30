@@ -1,5 +1,7 @@
 # Model predictive speed and steering control
 
+![](./figs/path1.png)
+
 This is a path tracking simulation using model predictive control (MPC). 
 
 The MPC controller controls vehicle speed and steering base on linearized model.
