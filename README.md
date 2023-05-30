@@ -69,7 +69,7 @@ class Robot(object):
 
 ## 5.3 For code detail usage
 
-Please check the following [README]()
+Please check the following [README](https://github.com/zhz03/control_tutorial_code/blob/main/control_code/PID_scripts/README.md)
 
 ## 6 MCP control
 
