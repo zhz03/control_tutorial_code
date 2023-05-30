@@ -73,7 +73,12 @@ if __name__ == '__main__':
     # Set 10 degrees of wheel systematic deviation
     robot.set_steering_drift(10. / 180. * np.pi)
 
+    # my guessed pid value 
     k_p, k_d, k_i = [0.2, 3.0, 0.01]
+    
+    # pid value from twiddle 
+    # k_p, k_d, k_i = [1.8133140112317063, 4.64727341127779, 0.07178979876918529]
+    
     # run and collect all x,y
     x_trajectory, y_trajectory, steering,p_arr, d_arr, i_arr = run(robot, k_p=k_p, k_d=k_d, k_i=k_i)
     # simulation 
